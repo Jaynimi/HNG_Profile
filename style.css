@@ -84,4 +84,9 @@ h3 {
 .fa-github {
 	color: white;
 	font-size: 2rem;
+	margin-top: 10px;
+}
+
+.vercel {
+	margin-top: 15px;
 }
