@@ -33,7 +33,7 @@ function updateUTCTime() {
 		.padStart(2, "0")}.${utcMilliseconds.toString().padStart(3, "0")}`;
 
 	// Update an HTML element with the time
-	document.getElementById("utc-time").textContent = `UTC Time: ${timeString}`;
+	document.getElementById("utc-time").textContent = `${timeString}`;
 }
 
 // Update the time every millisecond (you can adjust the interval)
@@ -45,5 +45,4 @@ const dayIndex = currentDate.getDay();
 const currentDay = daysOfWeek[dayIndex];
 console.log(`Today is ${currentDay}`);
 
-day.innerHTML = `Today is ${currentDay}`;
-millisecond.innerHTML = `The time is ${currentUTCTimeInMilliseconds}`;
+day.innerHTML += `${currentDay}`;

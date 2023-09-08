@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background-color: black;
+	color: white;
+	margin: 50px 50px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/* 
+.profileContainer {
+	display: flex;
+	justify-content: left;
+} */
+
+.profile {
+	display: flex;
+	/* justify-content: center; */
+	flex-direction: column-reverse;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.profileImg {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.username {
+	margin-top: 15px;
+}
+
+.title {
+	color: #7851a9;
+	font-family: "Sofia", sans-serif;
+}
+
+h2,
+h3 {
+	margin-top: 20px;
+}
+
+#utc-time {
+	color: white;
+	margin-left: 10px;
+}
+
+.utcFix {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.utcF {
+	font-weight: 700;
+	/* font-size: 1.2rem; */
+}
+
+.git {
+	text-decoration: none;
+	color: #7851a9;
+	font-weight: 700;
+	font-size: 1.5rem;
+	font-family: "Sofia", sans-serif;
+}
+
+.fa-github {
+	color: white;
+	font-size: 2rem;
+}

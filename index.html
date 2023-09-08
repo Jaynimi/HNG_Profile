@@ -6,27 +6,46 @@
 		<script
 			src="https://kit.fontawesome.com/144b839c36.js"
 			crossorigin="anonymous"></script>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Sofia" />
+		<link rel="stylesheet" href="style.css" />
 		<title>Document</title>
 	</head>
 	<body>
 		<div class="container">
-			<div class="profile">
-				<h1 class="username" data-testid="slackUserName">
-					Omoleegho Adeola, Jonathan
-				</h1>
-				<img
-					src="photo_2023-09-07_23-20-00.jpg"
-					alt="Omoleegho Adeola, Jonathan"
-					data-testid="slackDisplayImage" />
-			</div>
-			<div class="dateAndTime">
-				<h3 class="currentDayOfTheWeek" testid="currentDayOfTheWeek"></h3>
-				<h3 id="utc-time" data-testid="currentUTCTime"></h3>
-			</div>
-			<div class="moreDetails">
-				<h2 class="myTrack" data-testid="myTrack">Frontend</h2>
-				<a href="http://github.com/Jaynimi" target="_blank"
-					><i class="fa-brands fa-github"></i
+			<div class="profileContainer">
+				<div class="profile">
+					<h1 class="username" data-testid="slackUserName">
+						<span class="title">Slack Name: </span>
+						Omoleegho Adeola, Jonathan
+					</h1>
+					<img
+						src="photo_2023-09-07_23-20-00.jpg"
+						alt="Omoleegho Adeola, Jonathan"
+						class="profileImg"
+						data-testid="slackDisplayImage" />
+				</div>
+				<!-- </div>
+			<div class="dateAndTime"> -->
+				<h3 class="currentDayOfTheWeek" data-testid="currentDayOfTheWeek">
+					<span class="title">Day: </span>
+				</h3>
+				<div class="utcFix">
+					<span class="title utcF">UTC Time: </span>
+					<p id="utc-time" data-testid="currentUTCTime"></p>
+				</div>
+				<!-- </div>
+			<div class="moreDetails"> -->
+				<h2 class="myTrack" data-testid="myTrack">
+					<span class="title">Track: </span>Frontend
+				</h2>
+				<a
+					href="http://github.com/Jaynimi"
+					target="_blank"
+					class="git"
+					data-testid="githubURL"
+					>Source code on GitHub <i class="fa-brands fa-github"></i
 				></a>
 			</div>
 		</div>
